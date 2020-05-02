@@ -1,3 +1,4 @@
+//just a small piece of useless code :-)
 package helloWorldPackage;
 
 public class HelloCounter {
