@@ -14,10 +14,15 @@ public class RunCollectionsDemo {
 		
 		List<GenericPair> genericPairList = new ArrayList<GenericPair>();
 		
+		//creating and adding some genericPairs
 		GenericPair<String> stringPair = new GenericPair<String>("Hello", "World");
 		genericPairList.add(stringPair);
 		GenericPair<Integer> integerPair = new GenericPair<Integer>(42, 222);
 		genericPairList.add(integerPair);
+
+		//adding integerPair, same-same but shorter ... 
+		genericPairList.add(new GenericPair<Integer>(911, 112));
+
 		
 		System.out.println(genericPairList.size());
 		
