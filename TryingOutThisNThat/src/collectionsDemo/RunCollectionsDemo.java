@@ -21,11 +21,14 @@ public class RunCollectionsDemo {
 		
 		System.out.println(genericPairList.size());
 		
+		//Iterating and printing with an iterator ... works!
 		Iterator<GenericPair> iterator = genericPairList.iterator();
 		while(iterator.hasNext()) {
 			GenericPair element = iterator.next();
 			System.out.println(element);
 			}
+		//Iterating and printing with a for-each and lambda ... works! 
+		genericPairList.forEach((GenericPair) -> System.out.println(GenericPair));
 	}
 
 }
